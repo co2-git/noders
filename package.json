@@ -2,6 +2,9 @@
   "name"    : "noders",
   "version" : "0.0.1",
   "main"    : "dist/main.js",
+  "bin"     : {
+    "noders" : "electron ."
+  },
   "dependencies": {
     "babel": "^5.8.21",
     "babel-runtime": "^5.8.5",
