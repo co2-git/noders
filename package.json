@@ -1,0 +1,18 @@
+{
+  "name"    : "noders",
+  "version" : "0.0.1",
+  "main"    : "dist/main.js",
+  "dependencies": {
+    "babel": "^5.8.21",
+    "babel-runtime": "^5.8.5",
+    "browserify": "^11.1.0",
+    "react": "^0.13.3",
+    "watchify": "^3.4.0"
+  },
+  "scripts": {
+    "build": "rm -rf dist && node_modules/.bin/babel app --modules common --stage 0 --optional runtime --out-dir dist;",
+    "watch": "rm -rf dist && node_modules/.bin/babel app --watch --modules common --stage 0 --out-dir dist",
+    "browserify": "browserify dist/index.js -o dist/bundle.js",
+    "watchify": "watchify dist/index.js -o dist/bundle.js"
+  }
+}
